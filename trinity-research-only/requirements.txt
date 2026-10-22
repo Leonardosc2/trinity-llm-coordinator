@@ -1,0 +1,3 @@
+# Only required by the included research excerpts and their synthetic tests.
+# This is not the original experiment's dependency lockfile.
+numpy>=1.24

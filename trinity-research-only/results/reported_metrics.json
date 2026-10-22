@@ -1,0 +1,133 @@
+{
+  "evidence_status": "Transcribed aggregate observations from supplied research records; not rerun or independently regraded in this release.",
+  "v1_retrospective": {
+    "stage": "historical test retrospective with one mutually unscorable item",
+    "mutually_scorable": 19,
+    "baseline_correct": 14,
+    "candidate_correct": 14,
+    "baseline_turns": 59,
+    "candidate_turns": 66,
+    "baseline_reported_tokens": 101362,
+    "candidate_reported_tokens": 107764
+  },
+  "v2_validation": {
+    "stage": "validation after documented grading corrections",
+    "attempted_per_arm": 20,
+    "mutually_scorable": 19,
+    "baseline_correct": 16,
+    "candidate_correct": 16,
+    "baseline_turns": 58,
+    "candidate_turns": 55,
+    "baseline_reported_tokens": 104353,
+    "candidate_reported_tokens": 90749,
+    "baseline_scorable_false_accepts": 2,
+    "candidate_scorable_false_accepts": 2
+  },
+  "v2_frozen_test": {
+    "stage": "historical frozen test",
+    "attempted_per_arm": 20,
+    "mutually_scorable": 20,
+    "baseline_correct": 16,
+    "candidate_correct": 15,
+    "baseline_turns": 64,
+    "candidate_turns": 60,
+    "baseline_reported_tokens": 113476,
+    "candidate_reported_tokens": 111792,
+    "baseline_scorable_false_accepts": 3,
+    "candidate_scorable_false_accepts": 4
+  },
+  "v3_validation": {
+    "stage": "exploratory validation with runtime amendments",
+    "attempted_per_arm": 36,
+    "mutually_scorable": 34,
+    "baseline_correct": 25,
+    "candidate_correct": 28,
+    "baseline_turns": 112,
+    "candidate_turns": 118,
+    "baseline_reported_tokens": 192962,
+    "candidate_reported_tokens": 234065,
+    "baseline_scorable_false_accepts": 4,
+    "candidate_scorable_false_accepts": 1,
+    "paired_both_correct": 24,
+    "paired_both_incorrect": 5,
+    "candidate_only_correct": 4,
+    "baseline_only_correct": 1,
+    "both_unscored": 2
+  },
+  "v3_frozen_test_locked": {
+    "stage": "held-out evaluation with locked automatic scoring",
+    "attempted_per_arm": 37,
+    "mutually_scorable": 37,
+    "baseline_correct": 29,
+    "candidate_correct": 30,
+    "baseline_turns": 118,
+    "candidate_turns": 116,
+    "baseline_reported_tokens": 205883,
+    "candidate_reported_tokens": 201185,
+    "paired_both_correct": 27,
+    "paired_both_incorrect": 5,
+    "candidate_only_correct": 3,
+    "baseline_only_correct": 2
+  },
+  "v3_frozen_test_posthoc": {
+    "stage": "same 37 questions; post-hoc format-only sensitivity analysis, not an independent test",
+    "mutually_scorable": 37,
+    "baseline_correct": 33,
+    "candidate_correct": 33,
+    "baseline_scorable_false_accepts": 1,
+    "candidate_scorable_false_accepts": 2,
+    "paired_both_correct": 31,
+    "paired_both_incorrect": 2,
+    "candidate_only_correct": 2,
+    "baseline_only_correct": 2
+  },
+  "v5_training": {
+    "stage": "separate optimization-set pilot only; no held-out result in its supplied report",
+    "generations": 3,
+    "candidates": 12,
+    "questions_per_candidate": 20,
+    "math_questions": 10,
+    "mmlu_questions": 10,
+    "candidate_question_trajectories": 240,
+    "worker_calls_attempted": 1194,
+    "worker_calls_returned": 1194,
+    "maximum_call_budget": 1200,
+    "selected_candidate_correct": 20,
+    "generation_candidate_fitnesses": [
+      [
+        0.0,
+        0.6,
+        1.0,
+        0.0
+      ],
+      [
+        0.6,
+        0.15,
+        0.95,
+        1.0
+      ],
+      [
+        0.95,
+        0.3,
+        0.95,
+        0.2
+      ]
+    ],
+    "role_selections": {
+      "Thinker": 17,
+      "Worker": 903,
+      "Verifier": 274
+    },
+    "verifier_outcomes": {
+      "valid_accept": 4,
+      "valid_revise": 245,
+      "malformed": 25
+    },
+    "trajectories_with_multiple_models": 42,
+    "trajectories_with_multiple_roles": 16,
+    "accept_terminations": 4,
+    "forced_terminations": 236,
+    "truncated_output_flags": 5,
+    "missing_final_answer_flags": 45
+  }
+}
